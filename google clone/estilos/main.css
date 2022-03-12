@@ -50,11 +50,32 @@ main {
 }
 
 main .main-logo{
-    width: 350px;
+    width: 350px; 
     margin: 0 auto;
     margin-bottom: 35px;
 }
 
 main .main-logo img {
     width: 300px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container{
+    width: 525px;
+    border: 1px solid #dfe1e5;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input{
+    width: 450px;
+    height: 40px;
+    border: none; /* se elimina el borde*/
+    outline: none; /* se quita borde que se ilumnia cuando se da click en el input*/
 }

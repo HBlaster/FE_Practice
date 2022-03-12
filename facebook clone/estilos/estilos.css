@@ -1,0 +1,21 @@
+body{
+    background: #fff;
+    color: #0f0f0f;
+    direction: ltr;
+    line-height: 1.34;
+    margin: 0;
+    padding: 0;
+    unicode-bidi: embed;
+}
+main{
+    display: flex;
+    margin-top: 200px;
+    text-align: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+

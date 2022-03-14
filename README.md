@@ -6,4 +6,4 @@ practica front end
 # Ejercicio 2: Google Clone
 - Replica a pagina principal de google
 # Carpeta css
--practica gird
+-practica grid

@@ -1,0 +1,27 @@
+.contenedor {
+    border: 5px solid rgb(71, 71, 100);
+    background-color: rgb(193, 191, 196);
+    display: grid;
+    grid-template-rows: 150px 150px 150px ;
+    grid-auto-flow: column;
+    gap: 15px;
+    place-content: center; /*poner el contenido al centro del contenedor*/
+}
+.item {
+    background-color: rgb(1, 1, 182);
+    color: white;
+    width: 100px;
+    font-size: 4rem;
+    border: 5px solid rgb(255, 255, 255);
+    display: grid; /*mostrar el contenido en rejillas*/
+    justify-items: end;
+    align-items: end ;
+    
+}
+.item:nth-child(5), .item:nth-child(2) { /*seleccionar solo items 2 y 5*/
+    background-color: rgb(59, 59, 177);
+}
+
+.item:nth-child(3), .item:nth-child(6) {
+    background-color: rgb(117, 117, 161);
+}

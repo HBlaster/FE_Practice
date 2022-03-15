@@ -2,7 +2,7 @@
     background: rgba(0, 0, 255, 0.425);
     border: 1px solid rgb(0, 0, 73);
     display: grid;
-    grid-template-rows: 100px 200px;
+    grid-template-rows: 200px 200px;
     grid-auto-columns: 100px;
     grid-auto-flow: column;
     gap: 15px;

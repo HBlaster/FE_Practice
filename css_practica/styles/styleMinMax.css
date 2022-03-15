@@ -1,0 +1,18 @@
+
+
+.container {
+    border: 5px solid skyblue;
+    background-color: rgba(167, 118, 63, 0.788);
+    display: grid;
+    place-content: center;
+    grid-template-columns: minmax(30px, 300px) 200px minmax(60px, 250px); /*la funcion minmax sirve para darle parametros de medida a el tamaño de los contenedores, con la finalidad de que se ajuste al tamaño de la pantalla o del contenido*/
+    grid-template-rows: repeat(3, auto); /*repeat nos sirve para decirle cuantas veces se va a hacer la misma accion, y con auto se busca que el contenedor se ajuste al contenido*/
+}
+
+.item{
+    display: grid;
+    color: skyblue;
+    justify-content: center;
+    border: 5px solid skyblue;
+    font-size: 2rem;
+}

@@ -1,0 +1,51 @@
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: rgb(241, 238, 234);
+}
+.contenedor{
+    background-color: rgb(243, 232, 219);
+    border: 5px gray solid;
+    display: grid;
+    gap: 3px;
+    padding: 3px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 75px 75px 75px;
+    grid-template-areas: 
+        "uno uno uno"
+        "dos tres tres"
+        "dos tres tres"
+    ;
+}
+
+.item{
+    font-size: 4rem;
+}
+
+.item-1{
+    border: 5px red solid;
+    background-color: rgba(255, 0, 0, 0.466);
+    /*grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-area: uno;
+}
+
+.item-2{
+    border: 5px rgb(0, 255, 85) solid;
+    background-color: rgba(0, 255, 85, 0.507);
+    /*grid-row-start: 2;
+    grid-row-end: 4;*/ 
+    grid-area: dos;
+}
+
+.item-3{
+    border: 5px solid rgb(0, 4, 255);
+    background-color: rgba(0, 4, 255, 0.63);
+    /*grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4; */ 
+    grid-area: tres;
+
+}

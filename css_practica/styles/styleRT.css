@@ -1,0 +1,65 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(196, 248, 231);
+    display: grid;
+    place-content: center;
+}
+.contenedor {
+    border: white 5px solid;
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px;
+    display: grid;
+    gap: 3px;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-areas:
+        "uno dos dos"
+        "tres tres cuatro"
+        "cinco seis siete"
+    ;
+}
+
+.item-1{
+    background-color: aquamarine;
+    grid-area: uno;
+    border-radius: 5px;
+}
+
+.item-2{
+    background-color: rgb(21, 253, 176);
+    grid-area: dos;
+    border-radius: 5px;
+}
+
+.item-3{
+    background-color: rgb(0, 136, 91);
+    grid-area: tres;
+    border-radius: 5px;
+}
+
+.item-4{
+    background-color: rgb(157, 192, 180);
+    grid-area: cuatro;
+    border-radius: 5px;
+}
+
+.item-5{
+    background-color: rgb(67, 255, 189);
+    grid-area: cinco;
+    border-radius: 5px;
+}
+
+.item-6{
+    background-color: rgb(52, 138, 108);
+    grid-area: seis;
+    border-radius: 5px;
+}
+
+.item-7{
+    background-color: rgb(28, 148, 108);
+    grid-area: siete;
+    border-radius: 5px;
+}

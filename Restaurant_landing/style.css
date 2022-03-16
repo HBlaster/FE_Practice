@@ -1,0 +1,89 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto; /*sin margenes arriba y abajo y que en automatico ajuste margen lateral para mantener contenido centrado*/
+
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+    padding: 5px;
+    margin-bottom: 100px;
+    
+}
+
+.hero_img{
+    width: 100%;
+    height: 100%;
+    
+    object-fit: contain; /*la imagen ocupe el 100% del contenedor*/
+}
+
+.info{
+    align-self: center;
+}
+
+.info h1{
+    color: #333;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.info p{
+    color: #333;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+
+.info button {
+    background-color: orange;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 60px;
+    font-size: 1em;
+    color: #333;
+    font-weight: bolder;
+   
+}
+
+.info button:hover{
+    color: aliceblue;
+}
+
+.our_services h2{
+    color: rgb(110, 110, 110);
+    border-bottom: 1px rgba(51, 51, 51, 0.164) solid;
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.mosaico {
+    margin: 5px;
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    grid-template-columns: repeat(4, minmax( 150px, 200px));
+    grid-auto-rows: 1fr;
+    grid-template-areas: 
+        "uno uno dos tres"
+        "uno uno cuatro cinco"
+    ;
+}
+
+.item{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*cubra toda la celda*/
+}
+
+.mosaico_uno{
+    grid-area: uno;
+}

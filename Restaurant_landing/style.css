@@ -10,8 +10,8 @@ main{
 
 .hero{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px;
+    grid-template-columns: minmax(300px, 2fr) 3fr;
+    grid-template-rows: 500px;
     padding: 5px;
     margin-bottom: 100px;
     
@@ -57,19 +57,23 @@ main{
     color: aliceblue;
 }
 
+.our_services{
+    margin-bottom: 100px;
+}
+
 .our_services h2{
     color: rgb(110, 110, 110);
     border-bottom: 1px rgba(51, 51, 51, 0.164) solid;
-    font-size: 1em;
+    font-size: 2em;
     font-weight: bolder;
     text-align: center;
+
 }
 
 .mosaico {
-    margin: 5px;
     display: grid;
     justify-content: center;
-    gap: 10px;
+    gap: 25px;
     grid-template-columns: repeat(4, minmax( 150px, 200px));
     grid-auto-rows: 1fr;
     grid-template-areas: 
@@ -86,4 +90,50 @@ main{
 
 .mosaico_uno{
     grid-area: uno;
+}
+
+.menu{
+    margin-bottom: 200px;
+}
+
+.menu-title{
+    font-size: 2rem;
+    color: rgb(110, 110, 110);
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.menu-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 150px);
+    gap: 25px;
+}
+
+.menu-grid_item{
+    background-color: rgba(255, 166, 0, 0.664);
+    padding: 15px;
+    border-top-left-radius: 20px;
+    
+}
+
+.menu-grid_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+    .hero{
+        grid-template-columns: minmax(300px, 500px);
+        justify-content: center;
+        
+    }
+    .hero_img{
+        display: none;
+    }
+    .mosaico{
+        grid-template-columns: repeat(auto-fit, minmax( 75px, 100px));
+       }
 }

@@ -135,5 +135,5 @@ main{
     }
     .mosaico{
         grid-template-columns: repeat(auto-fit, minmax( 75px, 100px));
-       }
+    }
 }

@@ -293,7 +293,7 @@ main{
     width: 90%;
     min-width: 288px;
     max-width: 900px;
-    height: 152px;
+    min-height: 152px;
     margin: 15px auto;
     padding:15px ;
     background-color: var(--warm-black);
@@ -361,4 +361,51 @@ main{
 
 }
 
+.hero_container{
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    padding: 5px;
+    background-image: url('assets/assets/img/bitcoinbaby2x.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
 
+.hero_container h2{
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.main-plans-container{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.main-plans-container .main-plans--title{
+    width: 90px;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.main-plans--title h2{
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.main-plans--title p{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+    
+}

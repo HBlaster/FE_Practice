@@ -11,3 +11,6 @@ practica front end
 
 # Practica de css
 - Practica propiedades de ubicacion con grid
+
+#Pagina Batatabit (Bitcoinpage)
+-Landing page responsive
